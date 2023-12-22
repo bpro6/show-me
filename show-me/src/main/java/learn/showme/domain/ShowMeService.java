@@ -6,7 +6,7 @@ public class ShowMeService {
     private final String specialChar = " !@#$%^&*(){}[]:;'<>?,./\"1234567890";
 
 
-    public String encode(String input, int index) {
+    public String encodeCaesarCypher(String input, int index) {
 
 
         char[] phrase = input.toUpperCase().toCharArray();
@@ -20,7 +20,7 @@ public class ShowMeService {
         return result.toString();
     }
 
-    public String decode(String input) {
+    public String decodeCaesarCypher(String input) {
 
 
         char[] phrase = input.toUpperCase().toCharArray();
@@ -106,25 +106,21 @@ public String intToRoman(int input){
 
 }
 
-public String romanToInt(String input) {
+// public String romanToInt(String input) {
 
+//  TODO:
 
-//    for (int i = 0; i < s.length(); i++) {
 //
-//        switch (s.charAt(i)) {
 //
-//            case '':
 //
-//        }
 //
-//    }
-
-    return null;
-
-}
+//
 
 //public boolean isValidRomanNum(String rom){
-//
+
+// TODO:
+
+
 //    String validChars = "IVXLCDM";
 //
 //    String s = rom.toUpperCase();

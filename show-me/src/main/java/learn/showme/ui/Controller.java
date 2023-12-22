@@ -49,12 +49,12 @@ String option = null;
 
                     String string = view.readString();
                     int index = view.readIndex();
-                    System.out.println( showMeService.encode(string, index));}
+                    System.out.println( showMeService.encodeCaesarCypher(string, index));}
 
                 case "DECODE"-> {
 
                     String string = view.readString();
-                    System.out.println(showMeService.decode(string));
+                    System.out.println(showMeService.decodeCaesarCypher(string));
 
                 }
 
@@ -76,7 +76,7 @@ String option = null;
                 case "ROMAN NUMERAL TO INTEGER" -> {
 
                     String string = view.readString();
-                    showMeService.romanToInt(string);
+                 //   showMeService.romanToInt(string);
 
                 }
 
